@@ -25,21 +25,21 @@ Refer to requirements.txt for a full list of dependencies.
 
 ### Setup Instructions
 1. Clone the repository :
-git clone https://github.com/yourusername/your-repo-name.git
+   https://github.com/nidhisahani-glitch/NidhiSahani_Wasserstoff_AI_Internship_Task.git
 cd your-repo-name
-2. Install dependencies:
+3. Install dependencies:
 If you are not using Docker, install the required Python packages:
 pip install -r requirements.txt
-3. Run the application:
+4. Run the application:
 To run the pipeline directly on your machine (without Docker):
 python PDF.py
-4. Docker Setup
+5. Docker Setup
 Build the Docker Image:
 docker build -t pdf-ingestion-app .
-5. Run the Docker Container:
+6. Run the Docker Container:
 docker run -p 5000:5000 pdf-ingestion-app
 This command runs the containerized app on port 5000. You can adjust the port mapping if needed.
-6. MongoDB Setup
+7. MongoDB Setup
 Ensure MongoDB is running and accessible. If you are using a local of MongoDB, make sure it’s running on port 27017. Alternatively, you can use a cloud-based MongoDB service.Configure your MongoDB connection string in the application using environment variables or directly in the script.
 
 Optional: Use Docker Compose (For MongoDB + App)
